@@ -26,8 +26,8 @@ function Astrologercard() {
                 </div>
             </div>
             <div className="hover-card">
-                    <button className='chat'>chat</button>
-                    <button className='call'>Call</button>
+                    <button className='chat-button'>Chat</button>
+                    <button className='call-button'>Call</button>
             </div>
         </div>
     )
