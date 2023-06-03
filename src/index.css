@@ -1,13 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #f0f0f0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar */
+
+.navbar-container {
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.website-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.website-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.website-logo h3 {
+  font-size: 1.5rem;
+}
+
+.navbar-controlls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navbar-controlls ul {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+.navbar-controlls ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+
+.navbar-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.navbar-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* home */
+
+.home-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #080400;
+  background-image: url("https://img.freepik.com/free-photo/orange-space-background_1017-3747.jpg?w=1380&t=st=1685783805~exp=1685784405~hmac=3f510b03a47962c7bb13070aa1d061db6eddf79175aca00d12e661ec7e74cfdf");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-container h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.home-container p {
+  text-align: center;
+}
+
+.consult-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.service-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.service {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.service span {
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+
+.customer-support {
+  font-size: 2rem;
+  gap: 0.8rem;
+}
+
+.refund {
+  font-size: 2rem;
+  gap: 0.8rem;
+}
+
+.private {
+  font-size: 2rem;
+  gap: 0.8rem;
+}
+
+.verified {
+  font-size: 2rem;
+  gap: 0.8rem;
+}
+
+.secure-payment {
+  font-size: 2rem;
+  gap: 0.8rem;
+}
+
+/* main */
+
+.main-container {
+  width: 85vw;
+  height: auto;
+}
+
+.testimonial-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f2d2ba;
+}
+
+.textimonial-heading-contianer img {
+  width: 70px;
+  height: 70px;
+}
+
+.textimonial-heading-contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.testimonial-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #D97122;
+}
+
+.testimonial-heading img {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-container {
+  width: 90%;
+}
+
+.testimonial-image {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: auto !important;
+} 
+
+.swiper-slide-visible {
+  width: auto !important;
+} 
+
+.swiper-slide-active {
+  width: auto !important;
+}
+
+.swiper-container {
+  width: 80% !important;
+  height: 450px !important;
+}
+
+.swiper-pagination {
+  margin-top: 30px !important;
+}
+
+.offer-contianer {
+  width: 100%;
+  height: 30vh;
+  background-image: url("https://user-images.githubusercontent.com/99132893/232675632-cb398efb-c32c-4d63-ae07-caaf8ce3aeb5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 2px 10px #3b3b3b;
+}
+
+.preview-page-dots {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: #D97122 2px solid;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #D97122;
+}
+
+/* premium astrologer */
+
+.premiumastrologer-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2d2ba;
+}
+
+.online-astrologers-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.astrologer-card {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.astrologer-image {
+  width: 100%;
+  height: 100%;
+}
+
+.astrologer-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.astrologer-details {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+  font-size: 0.9rem;
+}
+
+.card-upper-section {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.6rem;
+}
+
+.online-status {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background-color: #00FF00;
+}
+
+.hover-card {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-bottom-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.card-bottom-section h3 {
+  margin: 5px 0px;
+}
+
+.card-bottom-section p {
+  margin: 5px 0px;
+  font-size: 0.7rem;
+}
+
+.card-end {
+  width: 100%;
+  height: 10vh;
+  background: url("https://user-images.githubusercontent.com/99132893/233254741-aec43ffb-0cff-49f1-a426-db62aa55d87f.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* chakra */
+
+.chakra-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2d2ba;
 }
