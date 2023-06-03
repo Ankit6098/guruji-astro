@@ -258,7 +258,7 @@ code {
 
 .offer-contianer {
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   background-image: url("https://user-images.githubusercontent.com/99132893/232675632-cb398efb-c32c-4d63-ae07-caaf8ce3aeb5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -407,7 +407,7 @@ code {
 
 .card-end {
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   background: url("https://user-images.githubusercontent.com/99132893/233254741-aec43ffb-0cff-49f1-a426-db62aa55d87f.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -422,5 +422,252 @@ code {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f2d2ba;
+  margin-top: 3rem;
+}
+
+.chakra-main-section {
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chakra-main-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chakra-main-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.problem {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border: #D97122 2px solid;
+  border-radius: 10px;
+}
+
+.problem-img {
+  width: 70px;
+  height: 100%;
+  background-color: #D97122;
+  display: grid;
+  place-items: center;
+}
+
+.problem-img img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.problem-title {
+  width: 50%;
+  height: inherit;
+  color: black;
+  font-size: 0.8rem;
+  display: grid;
+  place-items: center;
+}
+
+.chakra-main-section-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chakra-main-section-center-img {
+  position: absolute;
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chakra-main-section-center-img2 {
+  animation: rotate 25s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #D97122;
+  color: #f0f0f0;
+}
+
+.inner-footer-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section1 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.section2 {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section3 {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section4 {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.trusted-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.trusted {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trusted img {
+  width: 80%;
+  height: 80%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+.name-input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+}
+
+.email-input {
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+}
+
+.message-input {
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 0.9rem;
+  resize: none;
+}
+
+.submit-button {
+  width: 83%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.footer-logo span {
+  font-size: 2rem;
 }

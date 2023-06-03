@@ -9,7 +9,7 @@ function Navbar() {
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Call with Astrologer</a></li>
-                    <li><a href="">Live(Coming Soon )</a></li>
+                    <li><a href="">Live (Coming Soon )</a></li>
                 </ul>
             </div>
             <div className="navbar-user">
