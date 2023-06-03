@@ -50,11 +50,17 @@ code {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.website-logo:hover {
+  color: #D97122;
 }
 
 .website-logo img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -86,6 +92,11 @@ code {
   text-decoration: none;
   cursor: pointer;
   color: #f0f0f0;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-controlls ul li a:hover {
+  color: #D97122;
 }
 
 .navbar-user {
@@ -93,6 +104,7 @@ code {
   justify-content: center;
   align-items: center;
   margin-left: 150px;
+  cursor: pointer;
 }
 
 .navbar-user img {
@@ -586,6 +598,10 @@ footer {
   justify-content: space-evenly;
 }
 
+.section1 p {
+  font-size: 0.6rem;
+}
+
 .section2 {
   width: 15%;
   height: 100%;
@@ -660,6 +676,13 @@ ul li a {
   text-decoration: none;
   color: #f0f0f0;
   font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+ul li a:hover {
+  font-weight: 600;
+  color: black;
 }
 
 .name-input {
@@ -670,6 +693,7 @@ ul li a {
   outline: none;
   padding: 0px 10px;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .email-input {
@@ -680,6 +704,7 @@ ul li a {
   outline: none;
   padding: 0px 10px;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .message-input {
@@ -691,6 +716,7 @@ ul li a {
   padding: 10px;
   font-size: 0.9rem;
   resize: none;
+  font-weight: 600;
 }
 
 .submit-button {
