@@ -137,6 +137,11 @@ code {
   cursor: pointer;
   background-color: #e72020;
   color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.consult-button:hover {
+  transform: scale(1.05);
 }
 
 .service-container {
@@ -261,7 +266,7 @@ code {
 
 .offer-contianer {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-image: url("https://user-images.githubusercontent.com/99132893/232675632-cb398efb-c32c-4d63-ae07-caaf8ce3aeb5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -321,6 +326,11 @@ code {
   overflow: hidden;
   position: relative;
   box-shadow: 5px 5px 10px #3b3b3b;
+  transition: all 0.5s ease-in-out;
+}
+
+.astrologer-card:hover {
+  transform: translateY(-10px);
 }
 
 .astrologer-image {
@@ -400,8 +410,8 @@ code {
 
 .chat-button {
   width: 100px;
-  height: 30px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 12px;
   border: none;
   outline: none;
   background-color: #D97122;
@@ -413,8 +423,8 @@ code {
 
 .call-button {
   width: 100px;
-  height: 30px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 12px;
   border: none;
   outline: none;
   background-color: #D97122;
@@ -515,6 +525,7 @@ code {
   height: inherit;
   color: black;
   font-size: 0.8rem;
+  font-weight: 600;
   display: grid;
   place-items: center;
 }
@@ -691,6 +702,7 @@ ul li a {
   background-color: white;
   color: black;
   font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
